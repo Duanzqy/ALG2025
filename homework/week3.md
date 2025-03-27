@@ -85,13 +85,13 @@ git init
 ```
    如下图所示，我要在ALG2025文件夹下新建仓库
    
-   ![[Pasted image 20250327162259.png]]
+   ![Pasted image 20250327162259](attachments/Pasted%20image%2020250327162259.png)
 
 接着，打开GitHub Desktop，登陆你的账号后，按下图所示添加一个本地仓库。
 
-![[Pasted image 20250327162847.png]]
+![Pasted image 20250327162847](attachments/Pasted%20image%2020250327162847.png)
 选择你刚才创建仓库的路径，点击添加，就会得到类似下图的界面
 
-![[Pasted image 20250327163114.png]]
+![Pasted image 20250327163114](attachments/Pasted%20image%2020250327163114.png)
 
-最后在左下角summary处，填上一些注释信息，比如 创建仓库、初始化仓库、initialize 等等，
+最后在左下角summary处，填上一些注释信息，比如 创建仓库、初始化仓库、initialize 等等，点击下面 **Commit to master** ，再点击右上角**Publish repository** （可能需要神秘魔法），你就成功完成了！ 
