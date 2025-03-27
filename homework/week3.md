@@ -94,4 +94,9 @@ git init
 
 ![Pasted image 20250327163114](attachments/Pasted%20image%2020250327163114.png)
 
-最后在左下角summary处，填上一些注释信息，比如 创建仓库、初始化仓库、initialize 等等，点击下面 **Commit to master** ，再点击右上角**Publish repository** （可能需要神秘魔法），你就成功完成了！ 
+最后在左下角summary处，填上一些注释信息，比如 创建仓库、初始化仓库、initialize 等等，点击下面 **Commit to master** ，再点击右上角**Publish repository** （可能需要神秘魔法），你就成功完成了！ 可以在GitHub网站上看到你的代码！
+
+### 3. 更新、维护你的代码
+
+在你修改你的代码之后，你可以通过上面最后一步的操作来提交、推送你的更新。即
+1. 
