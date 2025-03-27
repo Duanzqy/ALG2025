@@ -1,5 +1,7 @@
 # week3
 
+> Author: **Boyang Guo**
+> Can be found at [ALG2025](https://github.com/Duanzqy/ALG2025)
 ## Exercise 6.2-7
 
 考虑大小为 $n$ 的堆 $A$，假设$A[1] = 1, A[i] = 2, i= 2,3,... , n$ , 由于1是堆z中最小的元素，需要在每一层进行交换直到它成为叶节点，由于堆的高度为 $\lfloor lg\,n \rfloor$, 所以MAX-HEAPIFY的最坏时间为 $\Omega(lg\,n)$.
@@ -9,9 +11,6 @@
 对于升序数组, 需要先将数组转化成堆，需要 $O(n)$. 之后需要调用 $n-1$ 次 MAX-HEAPIFY, 每次都需要执行全部的 $lg\, k$ 操作, 故总时间复杂度为: 
 $\sum_{k=1}^{n-1} lg\,k = lg((n-1)!) = O(n\, lg\, n)$
 对于降序数组同理, 主要计算时间为HEAPSORT中的循环MAX-HEAPIFY决定.
-
-
-
 
 ## Exercise 7.4-5
 快速排序部分，递归在数组长度小于k时停止，故递归树高度为 $lg(n/k)$ ,而每一层调用的划分算法运行时间和为 $O(n)$ ,则快速排序部分的时间为 $lg(n/k)*O(n)=O(n\, lg(n/k))$.
@@ -72,13 +71,13 @@ MODIFIED-COUNT-SORT(A, n, k)
 - GitHub 是一个**基于 Git 的代码托管平台**，允许开发者存储、管理和共享 Git 仓库。它提供了一系列协作工具，如：**远程代码仓库**：可以将本地 Git 仓库推送到 GitHub，供他人访问。GitHub 是全球最大的开源代码托管平台，在上面可以找到许多开源项目进行学习借鉴。
 
 ## 2. 快速入门
-### 1. 安装Git
+### 2.1. 安装Git
 
 下载地址：[Git]((https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git))
 或者直接下载 [GitHub Desktop](https://github.com/apps/desktop)(**推荐！！！**)
 注册一个[Github](https://github.com/)账号
 
-### 2. 初始化你的仓库并完成一次提交
+### 2.2. 初始化你的仓库并完成一次提交
    对于你想管理的仓库，可以右键-打开终端，输入
 ```
 git init
@@ -96,7 +95,8 @@ git init
 
 最后在左下角summary处，填上一些注释信息，比如 创建仓库、初始化仓库、initialize 等等，点击下面 **Commit to master** ，再点击右上角**Publish repository** （可能需要神秘魔法），你就成功完成了！ 可以在GitHub网站上看到你的代码！
 
-### 3. 更新、维护你的代码
+![](attachments/Pasted%20image%2020250327175327.png)
+### 2.3. 更新、维护你的代码
 
 在你修改你的代码之后，你可以通过上面最后一步的操作来提交、推送你的更新。即
 1. 填上你这次修改代码信息的Summary，然后 Commit to master 
@@ -132,4 +132,16 @@ git branch <分支名>
 # 切换分支
 git checkout <分支名>
 ```
+
+
+## 3. 能否更进一步？
+
+随着如今AI的迅速发展，我们已经改变了我们的搜索方式，许多问题都可以通过跟LLM(Large language Model)聊天解决。例如我们想学怎么使用 git 创建仓库、管理代码等，但是LLM只会告诉我们怎么去做，而不能直接帮我们完成。
+
+所以我们的目标是：用人类语言告诉 LLM 我们要干什么，然后它就能直接帮我们解决，这更进一步的提高了效率。现在可以通过 **MCP** 解决一部分的问题。
+
+[介绍模型上下文协议 Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+
+通过 **MCP** 我们可以实现，告诉AI一个Prompt ，如"请帮我建一个 ALG2025 的Git仓库“，便能自动化的完成。关于 MCP 我也只是初步的了解了一些，还没上手操作过，等我先摸索明白了，再在补充中给大家介绍（画饼）。感兴趣的同学可以先行了解一下
+
 

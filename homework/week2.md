@@ -1,5 +1,7 @@
 # week2
 
+> Author: **Boyang Guo**
+> Can be found at [ALG2025](https://github.com/Duanzqy/ALG2025)
 ## Problems 4-7 Monge Array
 
 ### a
